@@ -1,0 +1,237 @@
+/* Paleta de colores para los temas */
+:root {
+    --color-verde: #4CAF50;
+    --color-amarillo: #FFC107;
+    --color-rojo: #F44336;
+    --color-naranja: #FF9800;
+    --color-morado: #9C27B0;
+    --color-granate: #C2185B;
+    --color-indigo: #3F51B5;
+    --color-azul-marino: #34495e;
+    --color-dorado: #FFB300;
+    --color-fondo: #f0f4f8;
+    --color-principal: #0d47a1;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--color-fondo);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    /* La transición hace que el cambio de tema sea suave */
+    transition: background-color 0.5s ease;
+}
+
+/* --- REGLAS DE TEMA --- */
+/* Cada clase cambia el color de los elementos importantes */
+.tema-verde .oracion { border-left-color: var(--color-verde); }
+.tema-verde .oracion h3 { color: var(--color-verde); }
+.tema-verde .btn-libro.activo { background-color: var(--color-verde); box-shadow: 0 0 10px var(--color-verde);}
+
+.tema-amarillo .oracion { border-left-color: var(--color-amarillo); }
+.tema-amarillo .oracion h3 { color: var(--color-amarillo); }
+.tema-amarillo .btn-libro.activo { background-color: var(--color-amarillo); box-shadow: 0 0 10px var(--color-amarillo);}
+
+.tema-rojo .oracion { border-left-color: var(--color-rojo); }
+.tema-rojo .oracion h3 { color: var(--color-rojo); }
+.tema-rojo .btn-libro.activo { background-color: var(--color-rojo); box-shadow: 0 0 10px var(--color-rojo);}
+
+.tema-naranja .oracion { border-left-color: var(--color-naranja); }
+.tema-naranja .oracion h3 { color: var(--color-naranja); }
+.tema-naranja .btn-libro.activo { background-color: var(--color-naranja); box-shadow: 0 0 10px var(--color-naranja);}
+
+.tema-morado .oracion { border-left-color: var(--color-morado); }
+.tema-morado .oracion h3 { color: var(--color-morado); }
+.tema-morado .btn-libro.activo { background-color: var(--color-morado); box-shadow: 0 0 10px var(--color-morado);}
+
+.tema-granate .oracion { border-left-color: var(--color-granate); }
+.tema-granate .oracion h3 { color: var(--color-granate); }
+.tema-granate .btn-libro.activo { background-color: var(--color-granate); box-shadow: 0 0 10px var(--color-granate);}
+
+.tema-indigo .oracion { border-left-color: var(--color-indigo); }
+.tema-indigo .oracion h3 { color: var(--color-indigo); }
+.tema-indigo .btn-libro.activo { background-color: var(--color-indigo); box-shadow: 0 0 10px var(--color-indigo);}
+
+.tema-azul-marino .oracion { border-left-color: var(--color-azul-marino); }
+.tema-azul-marino .oracion h3 { color: var(--color-azul-marino); }
+.tema-azul-marino .btn-libro.activo { background-color: var(--color-azul-marino); box-shadow: 0 0 10px var(--color-azul-marino);}
+
+.tema-dorado .oracion { border-left-color: var(--color-dorado); }
+.tema-dorado .oracion h3 { color: var(--color-dorado); }
+.tema-dorado .btn-libro.activo { background-color: var(--color-dorado); box-shadow: 0 0 10px var(--color-dorado);}
+/* --- FIN DE REGLAS DE TEMA --- */
+
+
+/* Contenedor Principal */
+.contenedor {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 {
+    color: var(--color-principal);
+    margin-top: 0;
+}
+
+header p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Menú de Botones de Libros */
+#menu-libros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-libro {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-libro:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
+
+.btn-libro.activo {
+    background-color: var(--color-principal);
+    box-shadow: 0 0 10px var(--color-principal);
+    transform: translateY(-2px);
+}
+
+/* Contenedor de Oraciones */
+#contenedor-oraciones {
+    margin-top: 20px;
+    text-align: left;
+    border-top: 2px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+#contenedor-oraciones .placeholder {
+    text-align: center;
+    font-size: 3em;
+    opacity: 0.5;
+}
+
+/* Estilo para cada oración individual */
+.oracion {
+    background-color: #f9f9f9;
+    border-left: 5px solid #1976d2;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+    cursor: grab;
+    transition: transform 0.3s ease, opacity 0.3s ease, border-left-color 0.5s ease;
+}
+
+.oracion.arrastrando {
+    cursor: grabbing;
+    user-select: none;
+}
+
+.oracion.desapareciendo {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.oracion h3 {
+    margin: 0 0 10px 0;
+    color: var(--color-principal);
+    pointer-events: none;
+    transition: color 0.5s ease;
+}
+
+.oracion p {
+    margin: 0;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    pointer-events: none;
+}
+
+```css
+/* --- ESTILOS PARA LA BARRA DE PROGRESO --- */
+#barra-progreso {
+    text-align: center;
+    margin: -10px 0 20px 0; /* Margen para posicionarlo bien */
+    min-height: 2.5em; /* Evita que la página "salte" cuando aparece el texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barra-progreso p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#barra-progreso h3 {
+    margin: 0;
+    color: var(--color-principal);
+    font-size: 1.3em;
+    animation: aparecer 0.5s ease-in-out;
+}
+
+/* Una pequeña animación para el mensaje de felicitaciones */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* --- ESTILOS PARA EL BOTÓN DE ESCUCHAR --- */
+.oracion .btn-escuchar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    background-color: #e9eef2;
+    border: none;
+    border-radius: 50%; /* Lo hace redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.oracion .btn-escuchar:hover {
+    background-color: #dbe4ec;
+    transform: scale(1.1);
+}
+
+.oracion .btn-escuchar:active {
+    transform: scale(1);
+}
