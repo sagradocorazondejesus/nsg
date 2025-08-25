@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         actodeContriccion: { titulo: "Acto de contriccion", texto: "Señor mío, Jesucristo, Dios y hombre verdadero,\ncreador y redentor mío, por ser tu quien eres,\nBondad infinita, y por que te amo sobre todas las cosas,\nme pesa de todo corazón haberte ofendido.\nAyudado de tu divina gracia propongo firmemente\nnunca mas pecar, confesarme\ny cumplir la penitencia que me fuera impuesta\npara el perdón de mis pecados.\nAmén."},
         actodeContriccionCorto: { titulo: "Yo Confieso", texto: "Amén."},
         losDiezMandamientos: { titulo: "Los diez mandamientos", texto: "1. Amaras a Dios sobre todas las cosas.\n2. No juraras el nombre de Dios en vano.\n3. Santificaras las fiestas.\n4. Honraras a tu padre y a tu madre.\n5. No mataras.\n6. No cometerás actos impuros.\n7. No robaras.\n8. No dirás falso testimonio ni mentiras.\n9. No consentirás pensamientos ni deseos impuros.\n10. No codiciaras los bienes ajenos."},
+        losSieteSacramentos: {titulo:"Los siete sacramentos", texto: "1. Bautismo.\n2. Confirmación.\n3. Eucaristía.\n4. Reconciliación\n5. Unción de Enfermos.\n6. Orden Sacerdotal\n7. Matrimonio."},
         almadeCristo: {titulo:"Alma de Cristo", texto: "Alma de Cristo, santifícame.\nCuerpo de Cristo, sálvame.\nSangre de Cristo, embriágame.\nAgua del costado de Cristo, lávame.\nPasión de Cristo, confórtame.\n¡Oh, buen Jesús! óyeme.\nDentro de tus llagas, escóndeme.\nNo permitas que me separe de Ti.\nDel maligno enemigo, defiéndeme.\nEn la hora de mi muerte, llámame.\nY mándame ir a Ti,\npara que con tus santos y angeles\nte alabe, por los siglos de los siglos.\nAmén."}
     
     
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "libro1": { icono: '🌱', tema: 'tema-verde', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda'] },
         "libro2": { icono: '🐑', tema: 'tema-amarillo', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria'] },
         "libro3":  { icono: '🙏', tema: 'tema-rojo', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre'] },
-        "libro4":  { icono: '✨', tema: 'tema-naranja', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos'] },
+        "libro4":  { icono: '✨', tema: 'tema-naranja', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos'] },
         "libro5":  { icono: '📖', tema: 'tema-morado', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN'] },
         "libro6":  { icono: '🌾', tema: 'tema-granate', oraciones: [] },
         "libro8":  { icono: '⚓', tema: 'tema-indigo', oraciones: [] },
