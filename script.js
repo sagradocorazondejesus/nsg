@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 barraProgreso.innerHTML = ""; return;
             }
             if (completadas === totalOraciones) {
-                barraProgreso.innerHTML = `<h3>¡Felicidades! ✨ ¡Has completado todas!</h3>`;
+                barraProgreso.innerHTML = `<h3>¡Felicidades! ✨ ¡Has completado todas las oraciones!</h3>`;
             } else {
                 barraProgreso.innerHTML = `<p>Progreso: <strong>${completadas} / ${totalOraciones}</strong> oraciones</p>`;
             }
