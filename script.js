@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
         losCincoMSMI: {titulo: "Los cinco mandamientos de\nla Santa Madre Iglesia", texto: "1. Oír misa entera los domingos\ny fiestas de guardar.\n\n2. Confesar los pecados mortales\nal menos una vez al año,\ny en peligro de muerte,\ny si se ha de comulgar.\n\n3. Comulgar al menos\npor pascua de resurrección.\n\n4. Ayunar y abstenerse de comer carne\ncuando lo manda la Santa Madre Iglesia.\n\n5. Ayudar a la Iglesia en sus necesidades." },
         lasCuatroVC: {titulo: "Las cuatro virtudes\ncardinales", texto:"1. Prudencia.\n2. Justicia.\n3. Fortaleza.\n4. Templanza."},
         almadeCristo: {titulo: "Alma de Cristo", texto: "Alma de Cristo, santifícame.\nCuerpo de Cristo, sálvame.\nSangre de Cristo, embriágame.\nAgua del costado de Cristo, lávame.\nPasión de Cristo, confórtame.\n¡Oh, buen Jesús! óyeme.\nDentro de tus llagas, escóndeme.\nNo permitas que me separe de Ti.\nDel maligno enemigo, defiéndeme.\nEn la hora de mi muerte, llámame.\nY mándame ir a Ti,\npara que con tus santos y angeles\nte alabe, por los siglos de los siglos.\nAmén."},
-        losCincoppubc: {titulo: "Los cinco pasos para una\nbuena confesion", texto:"1. Examen de conciencia.\n2. Dolor de los pecados.\n3. Propósito de enmienda.\n4. Decir los pecados al sacerdote.\n5. Cumplir la penitencia."}
+        losCincoppubc: {titulo: "Los cinco pasos para una\nbuena confesion", texto:"1. Examen de conciencia.\n2. Dolor de los pecados.\n3. Propósito de enmienda.\n4. Decir los pecados al sacerdote.\n5. Cumplir la penitencia."},
+        losSietePC: {titulo: "Los siete pecados capitales", texto: "1. Soberbia.\n2. Avaricia.\n3. Lujuria.\n4. Ira.\n5. Gula.\n6. Envidia.\n7. Pereza."}
     
     
     };
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "libro3":  { icono: '🙏', tema: 'tema-rojo', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre'] },
         "libro4":  { icono: '✨', tema: 'tema-naranja', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales'] },
         "libro5":  { icono: '📖', tema: 'tema-morado', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC'] },
-        "libro6":  { icono: '🌾', tema: 'tema-granate', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC', 'almadeCristo', 'losCincoppubc'] },
+        "libro6":  { icono: '🌾', tema: 'tema-granate', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC', 'almadeCristo', 'losCincoppubc', 'losSietePC'] },
         "libro8":  { icono: '⚓', tema: 'tema-indigo', oraciones: [] },
         "libro9":  { icono: '🔥', tema: 'tema-azul-marino', oraciones: [] },
         "libro10": { icono: '🕊️', tema: 'tema-dorado', oraciones: [] }
