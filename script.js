@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "libro2": { icono: '🐑', tema: 'tema-amarillo', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria'] },
         "libro3":  { icono: '🙏', tema: 'tema-rojo', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre'] },
         "libro4":  { icono: '✨', tema: 'tema-naranja', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo'] },
-        "libro5":  { icono: '📖', tema: 'tema-morado', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina' 'bajoTuAmparo'] },
+        "libro5":  { icono: '📖', tema: 'tema-morado', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo'] },
         "libro6":  { icono: '🌾', tema: 'tema-granate', oraciones: [] },
         "libro8":  { icono: '⚓', tema: 'tema-indigo', oraciones: [] },
         "libro9":  { icono: '🔥', tema: 'tema-azul-marino', oraciones: [] },
