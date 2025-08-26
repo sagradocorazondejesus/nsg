@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bajoTuAmparo: {titulo: "Bajo tu amparo", texto: "Bajo tu amparo nos acogemos,\nSanta Madre de Dios;\nno desprecies las suplicas\nque te hacemos\nen nuestras necesidades;\nantes bien, libranos\nde todos los peligros,\n¡Oh Virgen gloriosa y bendita!\nRuega por nosotros\nSanta Madre de Dios.\nPara que seamos dignos\nde alcanzar las divinas gracias\ny promesas de nuestro Señor Jesucristo.\nAmen."},
         losCincoMSMI: {titulo: "Los cinco mandamientos de la Santa Madre Iglesia", texto: "1. Oír misa entera los domingos\ny fiestas de guardar.\n\n2. Confesar los pecados mortales\nal menos una vez al año,\ny en peligro de muerte,\ny si se ha de comulgar.\n\n3. Comulgar al menos\npor pascua de resurrección.\n\n4. Ayunar y abstenerse de comer carne\ncuando lo manda la Santa Madre Iglesia.\n\n5. Ayudar a la Iglesia en sus necesidades." },
         lasCuatroVC: {titulo: "Las cuatro virtudes cardinales", texto:"1. Prudencia.\n2. Justicia.\n3. Fortaleza.\n4. Templanza."},
+        
         almadeCristo: {titulo:"Alma de Cristo", texto: "Alma de Cristo, santifícame.\nCuerpo de Cristo, sálvame.\nSangre de Cristo, embriágame.\nAgua del costado de Cristo, lávame.\nPasión de Cristo, confórtame.\n¡Oh, buen Jesús! óyeme.\nDentro de tus llagas, escóndeme.\nNo permitas que me separe de Ti.\nDel maligno enemigo, defiéndeme.\nEn la hora de mi muerte, llámame.\nY mándame ir a Ti,\npara que con tus santos y angeles\nte alabe, por los siglos de los siglos.\nAmén."}
         
     
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "libro1": { icono: '🌱', tema: 'tema-verde', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda'] },
         "libro2": { icono: '🐑', tema: 'tema-amarillo', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria'] },
         "libro3":  { icono: '🙏', tema: 'tema-rojo', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre'] },
-        "libro4":  { icono: '✨', tema: 'tema-naranja', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC'] },
+        "libro4":  { icono: '✨', tema: 'tema-naranja', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales'] },
         "libro5":  { icono: '📖', tema: 'tema-morado', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC'] },
         "libro6":  { icono: '🌾', tema: 'tema-granate', oraciones: [] },
         "libro8":  { icono: '⚓', tema: 'tema-indigo', oraciones: [] },
