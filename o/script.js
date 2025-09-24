@@ -42,13 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
         losSieteSacramentos: {titulo: "Los siete sacramentos", texto: "1. Bautismo.\n2. Confirmación.\n3. Eucaristía.\n4. Reconciliación\n5. Unción de Enfermos.\n6. Orden Sacerdotal\n7. Matrimonio."},
         lasTresVirtudesTeologales: {titulo: "Las tres virtudes teologales", texto: "1. Fe.\n2. Esperanza.\n3. Caridad (Amor)"},
         salbeRegina: {titulo: "Salve Reina", texto: "Dios te salve,\nReina y Madre de misericordia,\nvida, dulzura y esperanza nuestra;\nDios te salve.\nA ti llamamos los desterrados\nhijos de Eva;\na ti suspiramos, gimiendo\ny llorando en este valle delágrimas.\n¡Ea, pues! Señora, abogada nuestra,\nvuelve a nosotros esos tus ojos misericordiosos,\ny después de este destierro\nmuéstranos a Jesús,\nFruto bendito de tu vientre.\n¡Oh clemente, oh piadosa,\noh dulce Virgen María!\nRuega por nosotros\nSanta Madre de Dios,\npara que seamos dignos\nde alcanzar las divinas gracias\ny promesas de nuestro Señor Jesucristo.\nAmén."},
-        bajoTuAmparo: {titulo: "Bajo tu amparo", texto: "Bajo tu amparo nos acogemos,\nSanta Madre de Dios;\nno desprecies las suplicas\nque te hacemos\nen nuestras necesidades;\nantes bien, libranos\nde todos los peligros,\n¡Oh Virgen gloriosa y bendita!\nRuega por nosotros\nSanta Madre de Dios.\nPara que seamos dignos\nde alcanzar las divinas gracias\ny promesas de nuestro Señor Jesucristo.\nAmen."},
-        losCincoMSMI: {titulo: "Los cinco mandamientos de\nla Santa Madre Iglesia", texto: "1. Oír misa entera los domingos\ny fiestas de guardar.\n\n2. Confesar los pecados mortales\nal menos una vez al año,\ny en peligro de muerte,\ny si se ha de comulgar.\n\n3. Comulgar al menos\npor pascua de resurrección.\n\n4. Ayunar y abstenerse de comer carne\ncuando lo manda la Santa Madre Iglesia.\n\n5. Ayudar a la Iglesia en sus necesidades." },
+        bajoTuAmparo: {titulo: "Bajo tu amparo", texto: "Bajo tu amparo nos acogemos,\nSanta Madre de Dios;\nno desprecies las suplícas\nque te hacemos\nen nuestras necesidades;\nantes bien, librános\nde todos los peligros,\n¡Oh Virgen gloriosa y bendita!\nRuega por nosotros\nSanta Madre de Dios.\nPara que seamos dignos\nde alcanzar las divinas gracias\ny promesas de nuestro Señor Jesucristo.\nAmen."},
+        losCincoMSMI: {titulo: "Los cinco mandamientos de\nla Santa Madre Iglesia", texto: "1. Oír misa entera los domingos\ny fiestas de guardar.\n\n2. Confesar los pecados mortales\nal menos una vez al año,\ny en peligro de muerte,\ny si se há de comulgar.\n\n3. Comulgar al menos\npor pascua de resurrección.\n\n4. Ayunar y abstenerse\nde comer carne\ncuando lo manda\nla Santa Madre Iglesia.\n\n5. Ayudar a la Iglesia\nen sus necesidades." },
         lasCuatroVC: {titulo: "Las cuatro virtudes\ncardinales", texto:"1. Prudencia.\n2. Justicia.\n3. Fortaleza.\n4. Templanza."},
         almadeCristo: {titulo: "Alma de Cristo", texto: "Alma de Cristo, santifícame.\nCuerpo de Cristo, sálvame.\nSangre de Cristo, embriágame.\nAgua del costado de Cristo, lávame.\nPasión de Cristo, confórtame.\n¡Oh, buen Jesús! óyeme.\nDentro de tus llagas, escóndeme.\nNo permitas que me separe de Ti.\nDel maligno enemigo, defiéndeme.\nEn la hora de mi muerte, llámame.\nY mándame ir a Ti,\npara que con tus santos y angeles\nte alabe, por los siglos de los siglos.\nAmén."},
         losCincoppubc: {titulo: "Los cinco pasos para una\nbuena confesion", texto:"1. Examen de conciencia.\n2. Dolor de los pecados.\n3. Propósito de enmienda.\n4. Decir los pecados al sacerdote.\n5. Cumplir la penitencia."},
         losSietePC: {titulo: "Los siete pecados capitales", texto: "1. Soberbia.\n2. Avaricia.\n3. Lujuria.\n4. Ira.\n5. Gula.\n6. Envidia.\n7. Pereza."},
-        comunionespiritual: {titulo: "Comunion Espiritual", texto: "Jesús mío,\ncreo firmemente que estas\nen el santísimo sacramente del altar,\nte amo sobre todas las cosas\n y deseo tenerte en mi alma.\nYa que ahora no puedo recibirte sacramentalmente,\nven a lo menos espiritualmente a mi corazón.\nComo si ya hubieses venido,\nte abrazo y me uno todo a ti:\nno permitas que yo me separe de ti.\nAmén."}
+        comunionespiritual: {titulo: "Comunion Espiritual", texto: "Jesús mío,\ncreo firmemente que estás\nen el santísimo sacramente del altar,\nte amo sobre todas las cosas\n y deseo tenerte en mi alma.\nYa que ahora no puedo recibirte sacramentalmente,\nven a lo menos espiritualmente a mi corazón.\nComo si ya hubieses venido,\nte abrazo y me uno todo a ti:\nno permitas que yo me separe de ti.\nAmén."}
     };
 
     // =================================================================
@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 
 
