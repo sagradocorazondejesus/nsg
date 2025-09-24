@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         yoConfieso: { titulo: "Yo Confieso", texto: "Yo confieso ante Dios Todo poderoso,\ny ante ustedes hermanos,\nque he pecado mucho de pensamiento,\npalabra, obra y omisión.\nPor mi culpa, por mi culpa,\npor mi gran culpa.\nPor eso ruego a Santa María\nsiempre Virgen, a los ángeles,\na los santos y a ustedes hermanos,\nque intercedan por mí ante Dios,\nNuestro Señor.\nAmén."},
         actodeContriccion: { titulo: "Acto de contriccion", texto: "Señor mío, Jesucristo, Dios y hombre verdadero,\ncreador y redentor mío, por ser tu quien eres,\nBondad infinita, y por que te amo sobre todas las cosas,\nme pesa de todo corazón haberte ofendido.\nAyudado de tu divina gracia propongo firmemente\nnunca mas pecar, confesarme\ny cumplir la penitencia que me fuera impuesta\npara el perdón de mis pecados.\nAmén."},
         actodeContriccionCorto: { titulo: "Acto de contriccion (corto)", texto: "Dios mio, me arrepiento\nde todo corazón de haberte ofendido,\n porque eres infinitamente bueno;\ndame tu santa gracia\npara no ofenderte mas\nAmén."},
-        losDiezMandamientos: { titulo: "Los diez mandamientos", texto: "1. Amaras a Dios sobre todas las cosas.\n2. No juraras el nombre\nde Dios en vano.\n3. Santificaras las fiestas.\n4. Honraras a tu padre y a tu madre.\n5. No mataras.\n6. No cometerás actos impuros.\n7. No robaras.\n8. No dirás falso testimonio\nni mentiras.\n9. No consentirás pensamientos\nni deseos impuros.\n10. No codiciaras los bienes ajenos."},
+        losDiezMandamientos: { titulo: "Los diez mandamientos", texto: "1. Amarás a Dios sobre todas las cosas.\n2. No jurarás el nombre\nde Dios en vano.\n3. Santificarás las fiestas.\n4. Honrarás a tu padre y a tu madre.\n5. No matarás.\n6. No cometerás actos impuros.\n7. No robarás.\n8. No dirás falso testimonio\nni mentirás.\n9. No consentirás pensamientos\nni deseos impuros.\n10. No codiciarás los bienes ajenos."},
         losSieteSacramentos: {titulo: "Los siete sacramentos", texto: "1. Bautismo.\n2. Confirmación.\n3. Eucaristía.\n4. Reconciliación\n5. Unción de Enfermos.\n6. Orden Sacerdotal\n7. Matrimonio."},
         lasTresVirtudesTeologales: {titulo: "Las tres virtudes teologales", texto: "1. Fe.\n2. Esperanza.\n3. Caridad (Amor)"},
         salbeRegina: {titulo: "Salve Reina", texto: "Dios te salve,\nReina y Madre de misericordia,\nvida, dulzura y esperanza nuestra;\nDios te salve.\nA ti llamamos los desterrados\nhijos de Eva;\na ti suspiramos, gimiendo\ny llorando en este valle delágrimas.\n¡Ea, pues Señora, abogada nuestra,\nvuelve a nosotros esos tus ojos misericordiosos,\ny después de este destierro\nmuéstranos a Jesús,\nFruto bendito de tu vientre.\n¡Oh clemente, oh piadosa,\noh dulce Virgen María!\nRuega por nosotros\nSanta Madre de Dios,\npara que seamos dignos\nde alcanzar las divinas gracias\ny promesas de nuestro Señor Jesucristo.\nAmén."},
@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 
 
