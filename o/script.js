@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         losDiezMandamientos: { titulo: "Los diez mandamientos", texto: "1. Amarás a Dios sobre todas las cosas.\n2. No jurarás el nombre de Dios\nen vano.\n3. Santificarás las fiestas.\n4. Honrarás a tu padre y a tu madre.\n5. No matarás.\n6. No cometerás actos impuros.\n7. No robarás.\n8. No dirás falso testimonio\nni mentirás.\n9. No consentirás pensamientos\nni deseos impuros.\n10. No codiciarás los bienes ajenos."},
         losSieteSacramentos: {titulo: "Los siete sacramentos", texto: "1. Bautismo.\n2. Confirmación.\n3. Eucaristía.\n4. Reconciliación\n5. Unción de Enfermos.\n6. Orden Sacerdotal\n7. Matrimonio."},
         lasTresVirtudesTeologales: {titulo: "Las tres virtudes teologales", texto: "1. Fe.\n2. Esperanza.\n3. Caridad (Amor)"},
-        salbeRegina: {titulo: "Salve Reina", texto: "Dios te salve,\nReina y Madre de misericordia,\nvida, dulzura y esperanza nuestra;\nDios te salve.\nA ti llamamos los desterrados\nhijos de Eva;\na ti suspiramos, gimiendo\ny llorando en este valle delágrimas.\n¡Ea, pues Señora, abogada nuestra,\nvuelve a nosotros esos tus ojos misericordiosos,\ny después de este destierro\nmuéstranos a Jesús,\nFruto bendito de tu vientre.\n¡Oh clemente, oh piadosa,\noh dulce Virgen María!\nRuega por nosotros\nSanta Madre de Dios,\npara que seamos dignos\nde alcanzar las divinas gracias\ny promesas de nuestro Señor Jesucristo.\nAmén."},
+        salbeRegina: {titulo: "Salve Reina", texto: "Dios te salve,\nReina y Madre de misericordia,\nvida, dulzura y esperanza nuestra;\nDios te salve.\nA ti llamamos los desterrados\nhijos de Eva;\na ti suspiramos, gimiendo\ny llorando en este valle delágrimas.\n¡Ea, pues! Señora, abogada nuestra,\nvuelve a nosotros esos tus ojos misericordiosos,\ny después de este destierro\nmuéstranos a Jesús,\nFruto bendito de tu vientre.\n¡Oh clemente, oh piadosa,\noh dulce Virgen María!\nRuega por nosotros\nSanta Madre de Dios,\npara que seamos dignos\nde alcanzar las divinas gracias\ny promesas de nuestro Señor Jesucristo.\nAmén."},
         bajoTuAmparo: {titulo: "Bajo tu amparo", texto: "Bajo tu amparo nos acogemos,\nSanta Madre de Dios;\nno desprecies las suplicas\nque te hacemos\nen nuestras necesidades;\nantes bien, libranos\nde todos los peligros,\n¡Oh Virgen gloriosa y bendita!\nRuega por nosotros\nSanta Madre de Dios.\nPara que seamos dignos\nde alcanzar las divinas gracias\ny promesas de nuestro Señor Jesucristo.\nAmen."},
         losCincoMSMI: {titulo: "Los cinco mandamientos de\nla Santa Madre Iglesia", texto: "1. Oír misa entera los domingos\ny fiestas de guardar.\n\n2. Confesar los pecados mortales\nal menos una vez al año,\ny en peligro de muerte,\ny si se ha de comulgar.\n\n3. Comulgar al menos\npor pascua de resurrección.\n\n4. Ayunar y abstenerse de comer carne\ncuando lo manda la Santa Madre Iglesia.\n\n5. Ayudar a la Iglesia en sus necesidades." },
         lasCuatroVC: {titulo: "Las cuatro virtudes\ncardinales", texto:"1. Prudencia.\n2. Justicia.\n3. Fortaleza.\n4. Templanza."},
@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 
 
