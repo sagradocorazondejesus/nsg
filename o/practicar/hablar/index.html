@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catequesis Interactiva - Menú de Oraciones</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f0f0f0; }
+        .container { width: 90%; max-width: 600px; text-align: center; }
+        
+        /* Estilo del Menú */
+        #menu-oraciones .oracion-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+        #menu-oraciones .oracion-btn:hover { background-color: #e3f2fd; }
+
+        /* Área de Práctica */
+        #area-practica { display: none; /* Oculto por defecto */ }
+        #prayer-display { min-height: 200px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; background-color: #fff; font-size: 1.5em; line-height: 1.8; margin-bottom: 20px; }
+        #controls button { padding: 10px 20px; font-size: 1em; cursor: pointer; margin: 5px; }
+        
+        /* Estilos para las palabras generadas */
+        .correct { color: #2e7d32; font-weight: bold; }
+        .incorrect { color: #c62828; text-decoration: line-through; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="menu-oraciones">
+            <h2>Elige una oración para practicar</h2>
+            </div>
+
+        <div id="area-practica">
+            <h2 id="prayer-title"></h2>
+            <div id="prayer-display"></div>
+            <div id="controls">
+                <button id="start-btn">🎙️ Empezar a Rezar</button>
+                <button id="back-btn">← Volver al Menú</button>
+                <p id="status"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app4.js"></script>
+</body>
+</html>
