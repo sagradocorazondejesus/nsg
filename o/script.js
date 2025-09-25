@@ -48,7 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
         almadeCristo: {titulo: "Alma de Cristo", texto: "Alma de Cristo, santifícame.\nCuerpo de Cristo, sálvame.\nSangre de Cristo, embriágame.\nAgua del costado de Cristo, lávame.\nPasión de Cristo, confórtame.\n¡Oh, buen Jesús! óyeme.\nDentro de tus llagas, escóndeme.\nNo permitas que me separe de Ti.\nDel maligno enemigo, defiéndeme.\nEn la hora de mi muerte, llámame.\nY mándame ir a Ti,\npara que con tus santos y angeles\nte alabe, por los siglos de los siglos.\nAmén."},
         losCincoppubc: {titulo: "Los cinco pasos para una\nbuena confesion", texto:"1. Examen de conciencia.\n2. Dolor de los pecados.\n3. Propósito de enmienda.\n4. Decir los pecados al sacerdote.\n5. Cumplir la penitencia."},
         losSietePC: {titulo: "Los siete pecados capitales", texto: "1. Soberbia.\n2. Avaricia.\n3. Lujuria.\n4. Ira.\n5. Gula.\n6. Envidia.\n7. Pereza."},
-        comunionespiritual: {titulo: "Comunion Espiritual", texto: "Jesús mío,\ncreo firmemente que estás\nen el santísimo sacramente del altar,\nte amo sobre todas las cosas\n y deseo tenerte en mi alma.\nYa que ahora no puedo recibirte sacramentalmente,\nven a lo menos espiritualmente a mi corazón.\nComo si ya hubieses venido,\nte abrazo y me uno todo a ti:\nno permitas que yo me separe de ti.\nAmén."}
+        comunionespiritual: {titulo: "Comunion Espiritual", texto: "Jesús mío,\ncreo firmemente que estás\nen el santísimo sacramente del altar,\nte amo sobre todas las cosas\n y deseo tenerte en mi alma.\nYa que ahora no puedo recibirte sacramentalmente,\nven a lo menos espiritualmente a mi corazón.\nComo si ya hubieses venido,\nte abrazo y me uno todo a ti:\nno permitas que yo me separe de ti.\nAmén."},
+        sieteobrasMisEsp: {titulo: "Comunion Espiritual", texto: "1" },
+        sieteobrasMisCor: {titulo: "Comunion Espiritual", texto: "2" },
+        sietedonesES: {titulo: "Comunion Espiritual", texto: "3" },
+        docefrutosES: {titulo: "Comunion Espiritual", texto: "4" },
     };
 
     // =================================================================
@@ -61,9 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "libro4":  { icono: '✨', tema: 'tema-naranja', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales'] },
         "libro5":  { icono: '📖', tema: 'tema-morado', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC'] },
         "libro6":  { icono: '🌾', tema: 'tema-granate', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC', 'almadeCristo', 'losCincoppubc', 'losSietePC', 'comunionespiritual'] },
-        "libro8":  { icono: '⚓', tema: 'tema-indigo', oraciones: [] },
-        "libro9":  { icono: '🔥', tema: 'tema-azul-marino', oraciones: [] },
-        "libro10": { icono: '🕊️', tema: 'tema-dorado', oraciones: [] }
+        "libro8":  { icono: '⚓', tema: 'tema-indigo', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC', 'almadeCristo', 'losCincoppubc', 'losSietePC', 'comunionespiritual', 'sieteobrasMisEsp', 'sieteobrasMisCor'] },
+        "libro9":  { icono: '🔥', tema: 'tema-azul-marino', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC', 'almadeCristo', 'losCincoppubc', 'losSietePC', 'comunionespiritual', 'sieteobrasMisEsp', 'sieteobrasMisCor', 'sietedonesES'] },
+        "libro10": { icono: '🕊️', tema: 'tema-dorado', oraciones: ['senalDeLaCruz', 'padreNuestro', 'angelDeLaGuarda', 'aveMaria', 'gloriaAlPadre', 'credoN', 'yoConfieso', 'actodeContriccionCorto', 'losDiezMandamientos', 'losSieteSacramentos', 'lasTresVirtudesTeologales', 'salbeRegina', 'bajoTuAmparo', 'losCincoMSMI', 'lasCuatroVC', 'almadeCristo', 'losCincoppubc', 'losSietePC', 'comunionespiritual', 'sieteobrasMisEsp', 'sieteobrasMisCor', 'sietedonesES', 'docefrutosES'] }
     };
 
     // =================================================================
@@ -206,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 
 
