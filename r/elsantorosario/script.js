@@ -1,3 +1,26 @@
+    // ===============================================
+    // LÓGICA DEL MENÚ LATERAL
+    // ===============================================
+    const btnMenu = document.getElementById('btn-menu');
+    const btnCerrarMenu = document.getElementById('btn-cerrar-menu');
+    const menuLateral = document.getElementById('menu-lateral');
+    const overlay = document.getElementById('overlay');
+
+    function abrirMenu() {
+        menuLateral.classList.add('abierto');
+        overlay.classList.add('activo');
+    }
+
+    function cerrarMenu() {
+        menuLateral.classList.remove('abierto');
+        overlay.classList.remove('activo');
+    }
+
+    btnMenu.addEventListener('click', abrirMenu);
+    btnCerrarMenu.addEventListener('click', cerrarMenu);
+    overlay.addEventListener('click', cerrarMenu);
+
+
 // Misterios por día
 const misteriosPorDia = {
   0: 'Gloriosos',   // Domingo
