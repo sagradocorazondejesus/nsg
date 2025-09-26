@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sieteobrasMisEsp: {titulo: "Las 7 obras de misericordia espirituales", texto: "1. Enseñar al que no sabe.\n2. Dar buen consejo al que lo nececita.\n3. Corregir al que yerra.\n4. Perdonar las injurias.\n5. Consolar al triste.\n6.Sufrir con paciencia los defectos de los demas.\n7. Rogar a Dios por vivos y difuntos." },
         sieteobrasMisCor: {titulo: "Las 7 obras de misericordia corporales", texto: "1. Visitar y cuidar a los enfermos.\n2. Dar de comer al ambriento.\n3. Dar de beber al sediento.\n.4. Dar posada al peregrino.\n5. Consolar al triste.\n6. Redimir al cautivo.\n7 Enterrar a los muertos." },
         sietedonesES: {titulo: "Los 7 dones del Espiritú Santo", texto: "1. Sabiduria.\n2. Entendimiento.\n3. Consejo.\n4. Fortaleza.\n5. Ciencia.\n6. Piedad.\n7. Temor de Dios." },
-        docefrutosES: {titulo: "Los 12 frutos del Espiritu Santo", texto: "4" },
+        docefrutosES: {titulo: "Los 12 frutos del Espiritu Santo", texto: "1. Amor.\n2. Alegria.\n3. Paz.\n4. Paciencia.\n5. Longanimidad\n6. Bondad.\n7. Benignidad.\n.8. Mansedumbre.\n9. Fe.\n10. Modestia.\n11. Continencia.\n12. Castidad." },
     };
 
     // =================================================================
@@ -210,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 
 
