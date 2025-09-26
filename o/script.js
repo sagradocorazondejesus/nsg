@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
         losCincoppubc: {titulo: "Los cinco pasos para una\nbuena confesion", texto:"1. Examen de conciencia.\n2. Dolor de los pecados.\n3. Propósito de enmienda.\n4. Decir los pecados al sacerdote.\n5. Cumplir la penitencia."},
         losSietePC: {titulo: "Los siete pecados capitales", texto: "1. Soberbia.\n2. Avaricia.\n3. Lujuria.\n4. Ira.\n5. Gula.\n6. Envidia.\n7. Pereza."},
         comunionespiritual: {titulo: "Comunion Espiritual", texto: "Jesús mío,\ncreo firmemente que estás\nen el santísimo sacramente del altar,\nte amo sobre todas las cosas\n y deseo tenerte en mi alma.\nYa que ahora no puedo recibirte sacramentalmente,\nven a lo menos espiritualmente a mi corazón.\nComo si ya hubieses venido,\nte abrazo y me uno todo a ti:\nno permitas que yo me separe de ti.\nAmén."},
-        sieteobrasMisEsp: {titulo: "Comunion Espiritual", texto: "1" },
-        sieteobrasMisCor: {titulo: "Comunion Espiritual", texto: "2" },
-        sietedonesES: {titulo: "Comunion Espiritual", texto: "3" },
-        docefrutosES: {titulo: "Comunion Espiritual", texto: "4" },
+        sieteobrasMisEsp: {titulo: "Las 7 obras de misericordia espirituales", texto: "1. Enseñar al que no sabe.\n2. Dar buen consejo al que lo nececita.\n3. Corregir al que yerra.\n4. Perdonar las injurias.\n5. Consolar al triste.\n6.Sufrir con paciencia los defectos de los demas.\n7. Rogar a Dios por vivos y difuntos." },
+        sieteobrasMisCor: {titulo: "Las 7 obras de misericordia corporales", texto: "2" },
+        sietedonesES: {titulo: "Los 7 dones del Espiritú Santo", texto: "3" },
+        docefrutosES: {titulo: "Los 12 frutos del Espiritu Santo", texto: "4" },
     };
 
     // =================================================================
@@ -210,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 
 
