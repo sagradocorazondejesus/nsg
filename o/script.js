@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         comunionespiritual: {titulo: "Comunion Espiritual", texto: "Jesús mío,\ncreo firmemente que estás\nen el santísimo sacramente del altar,\nte amo sobre todas las cosas\n y deseo tenerte en mi alma.\nYa que ahora no puedo recibirte sacramentalmente,\nven a lo menos espiritualmente a mi corazón.\nComo si ya hubieses venido,\nte abrazo y me uno todo a ti:\nno permitas que yo me separe de ti.\nAmén."},
         sieteobrasMisEsp: {titulo: "Las 7 obras de misericordia espirituales", texto: "1. Enseñar al que no sabe.\n2. Dar buen consejo al que lo nececita.\n3. Corregir al que yerra.\n4. Perdonar las injurias.\n5. Consolar al triste.\n6.Sufrir con paciencia los defectos de los demas.\n7. Rogar a Dios por vivos y difuntos." },
         sieteobrasMisCor: {titulo: "Las 7 obras de misericordia corporales", texto: "1. Visitar y cuidar a los enfermos.\n2. Dar de comer al ambriento.\n3. Dar de beber al sediento.\n.4. Dar posada al peregrino.\n5. Consolar al triste.\n6. Redimir al cautivo.\n7 Enterrar a los muertos." },
-        sietedonesES: {titulo: "Los 7 dones del Espiritú Santo", texto: "3" },
+        sietedonesES: {titulo: "Los 7 dones del Espiritú Santo", texto: "1. Sabiduria.\n2. Entendimiento.\n3. Consejo.\n4. Fortaleza.\n5. Ciencia.\n6. Piedad.\n7. Temor de Dios." },
         docefrutosES: {titulo: "Los 12 frutos del Espiritu Santo", texto: "4" },
     };
 
@@ -210,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
 
 
