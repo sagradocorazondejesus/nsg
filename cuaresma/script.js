@@ -1,7 +1,7 @@
-const reveal = document.getElementById("reveal");
+const msgCard = document.getElementById("msgCard");
 
-reveal.addEventListener("click", () => {
-  reveal.classList.toggle("show");
+msgCard.addEventListener("click", () => {
+  msgCard.classList.toggle("flipped");
 
   if (navigator.vibrate) {
     navigator.vibrate(30);
