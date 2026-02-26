@@ -48,7 +48,7 @@ body {
 .msg-inner {
   position: relative;
   width: 100%;
-  min-height: 140px;
+  height: 240px;
   transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
