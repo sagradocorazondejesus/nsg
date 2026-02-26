@@ -40,7 +40,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* TARJETA QUE SE VOLTEA */
+/* TARJETA QUE SE VOLTEA (VERSIÓN PRO) */
 .msg-card {
   margin-top: 18px;
   perspective: 1000px;
@@ -49,27 +49,27 @@ body {
 .msg-inner {
   position: relative;
   width: 100%;
-  min-height: 140px;
   transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
 
-.msg-card.flipped .msg-inner {
-  transform: rotateY(180deg);
-}
-
+/* Altura base en las caras, crecen si el contenido es más grande */
 .msg-front,
 .msg-back {
   position: absolute;
   width: 100%;
-  height: 100%;
-  padding: 16px;
+  min-height: 180px;   /* puedes subirlo si quieres más aire */
+  padding: 20px;
   border-radius: 14px;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.msg-card.flipped .msg-inner {
+  transform: rotateY(180deg);
 }
 
 .msg-front {
@@ -86,15 +86,17 @@ body {
 }
 
 .msg-back h3 {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   color: #0f4c81;
 }
 
 .msg-back p {
-  margin: 0 0 6px;
-  font-size: 1.05rem;
+  margin: 6px 0;
+  line-height: 1.4;
 }
 
-.msg-back small {
-  color: #333;
+.msg-back strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #0f4c81;
 }
