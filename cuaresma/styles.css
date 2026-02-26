@@ -10,101 +10,95 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 16px;
 }
 
-.container {
+.ticket {
   width: 100%;
   max-width: 420px;
-}
-
-.card {
-  perspective: 1000px;
-}
-
-.card-inner {
-  width: 100%;
-  min-height: 520px;
-  position: relative;
-  transition: transform 0.8s ease;
-  transform-style: preserve-3d;
-}
-
-.card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 24px;
+  background: #fff;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 20px 18px 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
   text-align: center;
 }
 
-.card-front h1 {
+.ticket h1 {
+  margin: 0;
   color: #0f4c81;
-  margin-bottom: 10px;
+}
+
+.ticket h2 {
+  margin: 6px 0 4px;
+  color: #1fa2a6;
+  font-size: 1.2rem;
 }
 
 .fecha {
   font-weight: bold;
-  color: #1fa2a6;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  color: #555;
 }
 
 .info p {
-  margin: 6px 0;
-  font-size: 0.95rem;
-}
-
-.hint {
-  margin-top: 20px;
+  margin: 4px 0;
   font-size: 0.9rem;
-  color: #666;
 }
 
-.card-back {
-  transform: rotateY(180deg);
+.reveal {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 14px;
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease;
 }
 
-.card-back h2 {
-  color: #8d4a00;
-  margin-bottom: 12px;
+.reveal:active {
+  transform: scale(0.98);
 }
 
-.card-back p {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.card-back small {
+#tapText {
   display: block;
-  margin-bottom: 20px;
+  color: #8d4a00;
+  font-weight: bold;
+}
+
+.message {
+  display: none;
+  animation: pop 0.4s ease;
+}
+
+.message h3 {
+  margin: 6px 0 6px;
+  color: #8d4a00;
+}
+
+.message p {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.message small {
   color: #5d4037;
 }
 
-button {
-  border: none;
-  border-radius: 999px;
-  padding: 12px 20px;
-  background: #0f4c81;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.1s ease, background 0.2s ease;
+.reveal.show #tapText {
+  display: none;
 }
 
-button:active {
-  transform: scale(0.95);
-  background: #0b3a61;
+.reveal.show .message {
+  display: block;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
