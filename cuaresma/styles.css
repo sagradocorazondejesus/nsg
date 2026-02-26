@@ -23,15 +23,10 @@ body {
   text-align: center;
 }
 
-.ticket h1 {
-  margin: 0;
+.titulo-liturgico {
+  font-size: 1.9rem;
   color: #0f4c81;
-}
-
-.ticket h2 {
-  margin: 6px 0 4px;
-  color: #1fa2a6;
-  font-size: 1.2rem;
+  margin: 0 0 6px;
 }
 
 .fecha {
@@ -45,60 +40,61 @@ body {
   font-size: 0.9rem;
 }
 
-.reveal {
+/* TARJETA QUE SE VOLTEA */
+.msg-card {
   margin-top: 18px;
+  perspective: 1000px;
+}
+
+.msg-inner {
+  position: relative;
+  width: 100%;
+  min-height: 140px;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.msg-card.flipped .msg-inner {
+  transform: rotateY(180deg);
+}
+
+.msg-front,
+.msg-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   padding: 16px;
   border-radius: 14px;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.msg-front {
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.15s ease;
-}
-
-.reveal:active {
-  transform: scale(0.98);
-}
-
-#tapText {
-  display: block;
-  color: #8d4a00;
   font-weight: bold;
-}
-
-.message {
-  display: none;
-  animation: pop 0.4s ease;
-}
-
-.message h3 {
-  margin: 6px 0 6px;
   color: #8d4a00;
+  font-size: 1rem;
 }
 
-.message p {
+.msg-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  flex-direction: column;
+}
+
+.msg-back h3 {
+  margin: 0 0 6px;
+  color: #0f4c81;
+}
+
+.msg-back p {
   margin: 0 0 6px;
   font-size: 1.05rem;
 }
 
-.message small {
-  color: #5d4037;
-}
-
-.reveal.show #tapText {
-  display: none;
-}
-
-.reveal.show .message {
-  display: block;
-}
-
-@keyframes pop {
-  from {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+.msg-back small {
+  color: #333;
 }
