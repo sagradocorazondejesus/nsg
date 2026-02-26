@@ -42,14 +42,14 @@ body {
 
 /* TARJETA QUE SE VOLTEA */
 .msg-card {
-  margin-top: 18px;
+  margin-top: 8px;
   perspective: 1000px;
 }
 
 .msg-inner {
   position: relative;
   width: 100%;
-  min-height: 400px;
+  min-height: 140px;
   transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
