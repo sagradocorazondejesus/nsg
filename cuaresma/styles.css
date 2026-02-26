@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(135deg, #0f4c81, #1fa2a6);
   display: flex;
-  justify-content: center;
+
   align-items: center;
   padding: 16px;
 }
