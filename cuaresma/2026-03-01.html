@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boleto de Sello</title>
+  <title>II Domingo de Cuaresma</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <div class="ticket">
-    <h1>Boleto de Sello</h1>
-    <h2>II Domingo de Cuaresma</h2>
-    <p class="fecha">1 / Febrero / 2026</p>
+    <h1 class="titulo-liturgico">II Domingo de Cuaresma</h1>
+    <p class="fecha">1 / Marzo / 2026</p>
 
     <div class="info">
       <p><strong>Capilla:</strong> Nuestra Señora de Guadalupe</p>
@@ -21,18 +20,27 @@
       <p><strong>Párroco:</strong> Sr. Cura Gilberto Rentería</p>
     </div>
 
-    <div class="reveal" id="reveal">
-      <span id="tapText">👆 Toca para descubrir tu mensaje</span>
-      <div class="message" id="message">
-        <h3>Mensaje del día ✨</h3>
-        <p>
-          “Este es mi Hijo amado; escúchenlo.”
-        </p>
-        <small>
-          Hoy intenta escuchar con atención a tus papás o a tu maestro, aunque cueste un poquito 😉
-        </small>
+    <!-- TARJETA DEL MENSAJE (SE VOLTEA) -->
+    <div class="msg-card" id="msgCard">
+      <div class="msg-inner">
+        <!-- Frente -->
+        <div class="msg-front">
+          👆 Toca para descubrir tu mensaje
+        </div>
+
+        <!-- Reverso -->
+        <div class="msg-back">
+          <h3>Palabra de Jesús ✨</h3>
+          <p>
+            “Este es mi Hijo amado; escúchenlo.”
+          </p>
+          <small>
+            (Mt 17, 5) — Esta semana intenta escuchar con atención a tus papás o a tu maestro, aunque cueste un poquito 😉
+          </small>
+        </div>
       </div>
     </div>
+
   </div>
 
   <script src="script.js"></script>
