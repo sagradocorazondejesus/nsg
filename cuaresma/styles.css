@@ -15,7 +15,7 @@ body {
 
 .ticket {
   width: 100%;
-  width: 1420px;
+  max-width: 420px;
   background: #fff;
   border-radius: 20px;
   padding: 20px 18px 24px;
