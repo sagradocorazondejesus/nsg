@@ -1,5 +1,5 @@
 const canvas = document.getElementById("screen");
-const ctx = canvas.getContext("2d", { alpha: false });
+const ctx = canvas.getContext("2d");
 const imageData = ctx.getImageData(0, 0, 256, 240);
 
 const nes = new jsnes.NES({
@@ -7,10 +7,10 @@ const nes = new jsnes.NES({
     for (let i = 0; i < framebuffer_24.length; i++) {
       const pixel = framebuffer_24[i];
       const j = i * 4;
-      imageData.data[j]     = (pixel >> 16) & 0xff;
-      imageData.data[j + 1] = (pixel >> 8)  & 0xff;
-      imageData.data[j + 2] =  pixel        & 0xff;
-      imageData.data[j + 3] = 255;
+      imageData.data[j]     = (pixel >> 16) & 0xff; // R
+      imageData.data[j + 1] = (pixel >> 8)  & 0xff; // G
+      imageData.data[j + 2] =  pixel        & 0xff; // B
+      imageData.data[j + 3] = 255;                 // A
     }
     ctx.putImageData(imageData, 0, 0);
   },
@@ -28,47 +28,26 @@ document.getElementById("romInput").addEventListener("change", async (e) => {
   if (!file) return;
 
   const buffer = await file.arrayBuffer();
-  const binary = new Uint8Array(buffer).reduce((s, b) => s + String.fromCharCode(b), "");
+  const binary = new Uint8Array(buffer)
+    .reduce((s, b) => s + String.fromCharCode(b), "");
 
   nes.loadROM(binary);
   cancelAnimationFrame(rafId);
   frame();
 });
 
-// Fullscreen
-const fsBtn = document.getElementById("fsBtn");
-function goFullscreen() {
-  const el = document.documentElement;
-  if (el.requestFullscreen) el.requestFullscreen();
-}
-fsBtn.addEventListener("click", goFullscreen);
-canvas.addEventListener("click", goFullscreen);
-
-// Vibración suave
-function buzz(ms = 15) {
-  if (navigator.vibrate) navigator.vibrate(ms);
-}
-
-// Controles táctiles
-document.querySelectorAll(".btn[data-key]").forEach(btn => {
+// Controles táctiles simulando teclado
+document.querySelectorAll(".controls button").forEach(btn => {
   const code = btn.dataset.key;
-
-  const down = (e) => {
+  btn.addEventListener("touchstart", (e) => {
     e.preventDefault();
-    buzz(10);
     nes.buttonDown(1, jsnes.Controller[mapKey(code)]);
-  };
+  }, { passive: false });
 
-  const up = (e) => {
+  btn.addEventListener("touchend", (e) => {
     e.preventDefault();
     nes.buttonUp(1, jsnes.Controller[mapKey(code)]);
-  };
-
-  btn.addEventListener("touchstart", down, { passive: false });
-  btn.addEventListener("touchend", up, { passive: false });
-  btn.addEventListener("mousedown", down);
-  btn.addEventListener("mouseup", up);
-  btn.addEventListener("mouseleave", up);
+  }, { passive: false });
 });
 
 function mapKey(code) {
