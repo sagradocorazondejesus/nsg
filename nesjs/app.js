@@ -42,11 +42,11 @@ document.getElementById("fsBtn").addEventListener("click", () => {
 });
 
 // Vibración
-function buzz(ms = 12) {
+function buzz(ms = 10) {
   if (navigator.vibrate) navigator.vibrate(ms);
 }
 
-// Controles táctiles (pointer events)
+// Controles táctiles estables para Android
 document.querySelectorAll("[data-btn]").forEach(btn => {
   const nesBtn = jsnes.Controller[btn.dataset.btn];
 
@@ -61,8 +61,12 @@ document.querySelectorAll("[data-btn]").forEach(btn => {
     nes.buttonUp(1, nesBtn);
   };
 
-  btn.addEventListener("pointerdown", down);
-  btn.addEventListener("pointerup", up);
-  btn.addEventListener("pointercancel", up);
-  btn.addEventListener("pointerleave", up);
+  // ANDROID
+  btn.addEventListener("touchstart", down, { passive: false });
+  btn.addEventListener("touchend", up, { passive: false });
+
+  // PC
+  btn.addEventListener("mousedown", down);
+  btn.addEventListener("mouseup", up);
+  btn.addEventListener("mouseleave", up);
 });
