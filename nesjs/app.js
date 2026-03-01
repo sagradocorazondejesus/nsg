@@ -1,15 +1,15 @@
 const canvas = document.getElementById("screen");
-const ctx = canvas.getContext("2d", { alpha: false, desynchronized: true });
+const ctx = canvas.getContext("2d");
 const imageData = ctx.getImageData(0, 0, 256, 240);
 
 const nes = new jsnes.NES({
-  onFrame(framebuffer_24) {
-    for (let i = 0; i < framebuffer_24.length; i++) {
-      const pixel = framebuffer_24[i];
+  onFrame(framebuffer) {
+    for (let i = 0; i < framebuffer.length; i++) {
+      const pixel = framebuffer[i];
       const j = i * 4;
       imageData.data[j]     = (pixel >> 16) & 0xff;
-      imageData.data[j + 1] = (pixel >> 8)  & 0xff;
-      imageData.data[j + 2] =  pixel        & 0xff;
+      imageData.data[j + 1] = (pixel >> 8) & 0xff;
+      imageData.data[j + 2] = pixel & 0xff;
       imageData.data[j + 3] = 255;
     }
     ctx.putImageData(imageData, 0, 0);
@@ -17,56 +17,47 @@ const nes = new jsnes.NES({
   onAudioSample() {}
 });
 
-let rafId = null;
-function frame() {
-  nes.frame();
-  rafId = requestAnimationFrame(frame);
+let raf = null;
+
+function run() {
+  cancelAnimationFrame(raf);
+  function loop() {
+    nes.frame();
+    raf = requestAnimationFrame(loop);
+  }
+  loop();
 }
 
-document.getElementById("romInput").addEventListener("change", async (e) => {
+// Selector de ROM
+document.getElementById("romInput").addEventListener("change", e => {
   const file = e.target.files[0];
   if (!file) return;
 
-  const buffer = await file.arrayBuffer();
-  const binary = String.fromCharCode(...new Uint8Array(buffer));
-
-  nes.loadROM(binary);
-  cancelAnimationFrame(rafId);
-  frame();
+  const reader = new FileReader();
+  reader.onload = () => {
+    const data = new Uint8Array(reader.result);
+    nes.loadROM(data);
+    run();
+  };
+  reader.readAsArrayBuffer(file);
 });
 
-// Fullscreen
-document.getElementById("fsBtn").addEventListener("click", () => {
-  const el = document.documentElement;
-  if (el.requestFullscreen) el.requestFullscreen();
+// Controles táctiles
+document.querySelectorAll("button[data-btn]").forEach(btn => {
+  const key = btn.dataset.btn;
+
+  btn.addEventListener("touchstart", e => {
+    e.preventDefault();
+    nes.buttonDown(1, jsnes.Controller[key]);
+  }, { passive: false });
+
+  btn.addEventListener("touchend", e => {
+    e.preventDefault();
+    nes.buttonUp(1, jsnes.Controller[key]);
+  }, { passive: false });
 });
 
-// Vibración
-function buzz(ms = 10) {
-  if (navigator.vibrate) navigator.vibrate(ms);
-}
-
-// Controles táctiles estables para Android
-document.querySelectorAll("[data-btn]").forEach(btn => {
-  const nesBtn = jsnes.Controller[btn.dataset.btn];
-
-  const down = (e) => {
-    e.preventDefault();
-    nes.buttonDown(1, nesBtn);
-    buzz();
-  };
-
-  const up = (e) => {
-    e.preventDefault();
-    nes.buttonUp(1, nesBtn);
-  };
-
-  // ANDROID
-  btn.addEventListener("touchstart", down, { passive: false });
-  btn.addEventListener("touchend", up, { passive: false });
-
-  // PC
-  btn.addEventListener("mousedown", down);
-  btn.addEventListener("mouseup", up);
-  btn.addEventListener("mouseleave", up);
+// Pantalla completa
+document.getElementById("fullscreenBtn").addEventListener("click", () => {
+  document.documentElement.requestFullscreen?.();
 });
