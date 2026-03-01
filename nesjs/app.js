@@ -1,5 +1,5 @@
 const canvas = document.getElementById("screen");
-const ctx = canvas.getContext("2d");
+const ctx = canvas.getContext("2d", { alpha: false, desynchronized: true });
 const imageData = ctx.getImageData(0, 0, 256, 240);
 
 const nes = new jsnes.NES({
@@ -7,10 +7,10 @@ const nes = new jsnes.NES({
     for (let i = 0; i < framebuffer_24.length; i++) {
       const pixel = framebuffer_24[i];
       const j = i * 4;
-      imageData.data[j]     = (pixel >> 16) & 0xff; // R
-      imageData.data[j + 1] = (pixel >> 8)  & 0xff; // G
-      imageData.data[j + 2] =  pixel        & 0xff; // B
-      imageData.data[j + 3] = 255;                 // A
+      imageData.data[j]     = (pixel >> 16) & 0xff;
+      imageData.data[j + 1] = (pixel >> 8)  & 0xff;
+      imageData.data[j + 2] =  pixel        & 0xff;
+      imageData.data[j + 3] = 255;
     }
     ctx.putImageData(imageData, 0, 0);
   },
@@ -28,37 +28,41 @@ document.getElementById("romInput").addEventListener("change", async (e) => {
   if (!file) return;
 
   const buffer = await file.arrayBuffer();
-  const binary = new Uint8Array(buffer)
-    .reduce((s, b) => s + String.fromCharCode(b), "");
+  const binary = String.fromCharCode(...new Uint8Array(buffer));
 
   nes.loadROM(binary);
   cancelAnimationFrame(rafId);
   frame();
 });
 
-// Controles táctiles simulando teclado
-document.querySelectorAll(".controls button").forEach(btn => {
-  const code = btn.dataset.key;
-  btn.addEventListener("touchstart", (e) => {
-    e.preventDefault();
-    nes.buttonDown(1, jsnes.Controller[mapKey(code)]);
-  }, { passive: false });
-
-  btn.addEventListener("touchend", (e) => {
-    e.preventDefault();
-    nes.buttonUp(1, jsnes.Controller[mapKey(code)]);
-  }, { passive: false });
+// Fullscreen
+document.getElementById("fsBtn").addEventListener("click", () => {
+  const el = document.documentElement;
+  if (el.requestFullscreen) el.requestFullscreen();
 });
 
-function mapKey(code) {
-  switch (code) {
-    case "ArrowUp": return "UP";
-    case "ArrowDown": return "DOWN";
-    case "ArrowLeft": return "LEFT";
-    case "ArrowRight": return "RIGHT";
-    case "KeyZ": return "A";
-    case "KeyX": return "B";
-    case "Enter": return "START";
-    case "ShiftRight": return "SELECT";
-  }
+// Vibración
+function buzz(ms = 12) {
+  if (navigator.vibrate) navigator.vibrate(ms);
 }
+
+// Controles táctiles (pointer events)
+document.querySelectorAll("[data-btn]").forEach(btn => {
+  const nesBtn = jsnes.Controller[btn.dataset.btn];
+
+  const down = (e) => {
+    e.preventDefault();
+    nes.buttonDown(1, nesBtn);
+    buzz();
+  };
+
+  const up = (e) => {
+    e.preventDefault();
+    nes.buttonUp(1, nesBtn);
+  };
+
+  btn.addEventListener("pointerdown", down);
+  btn.addEventListener("pointerup", up);
+  btn.addEventListener("pointercancel", up);
+  btn.addEventListener("pointerleave", up);
+});
