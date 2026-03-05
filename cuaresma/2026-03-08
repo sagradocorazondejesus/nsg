@@ -1,1 +1,55 @@
-dddd
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Color de la barra superior (ajústalo por tiempo litúrgico) -->
+  <meta name="theme-color" content="#6a1b9a" />
+  <title>III Domingo de Cuaresma</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="ticket">
+    <h1 class="titulo-liturgico">III Domingo de Cuaresma</h1>
+    <p class="fecha">8 / Marzo / 2026</p>
+
+    <div class="info">
+      <p><strong>Capilla:</strong> Nuestra Señora de Guadalupe</p>
+      <p><strong>Lugar:</strong> Tala, Jalisco</p>
+      <p><strong>Parroquia:</strong> Sagrado Corazón de Jesús</p>
+      <p><strong>Comunidad:</strong> Huaxtla, Jalisco</p>
+      <p><strong>Párroco:</strong> Sr. Cura Gilberto Rentería v4</p>
+    </div>
+
+    <!-- TARJETA DEL MENSAJE (SE VOLTEA) -->
+    <div class="msg-card" id="msgCard">
+      <div class="msg-inner">
+        <!-- Frente -->
+        <div class="msg-front">
+          👆 Toca para recibir agua viva 💧
+        </div>
+
+        <!-- Reverso -->
+        <div class="msg-back">
+          <h3>Reflexion semanal, cuaresma. ✨</h3>
+          <p><strong>
+            “El que beba del agua que yo le daré, no tendrá sed jamás.”</strong>
+          </p>
+          <i>(Jn 4, 14)</i>
+          <p>
+              Jesús es como agua fresca para el corazón. 
+  Esta semana intenta buscarlo en la oración 
+  cuando estés triste, enojado o confundido. 
+  Él puede darte paz por dentro 💙
+          </p>
+                   
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
